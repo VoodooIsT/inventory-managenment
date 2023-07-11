@@ -1,0 +1,86 @@
+.header {
+	height: 50px;
+	border-bottom: 0.5px solid rgb(231, 228, 228);
+	background-color: white;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #555;
+
+	.wrapper {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		.items {
+			display: flex;
+			align-items: center;
+			margin-left: 10px;
+			margin-right: 10px;
+
+			.item {
+				display: flex;
+				align-items: center;
+				margin-left: 10px;
+				margin-right: 10px;
+				position: relative;
+				cursor: pointer;
+
+				.icon {
+					font-size: 20px;
+				}
+
+				.avatar {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+				}
+
+				.avatar-textIcon {
+					background-color: lightgreen;
+					font-size: larger;
+					text-align: center;
+					color: #2b572d;
+					font-weight: bold;
+					line-height: 30px;
+					text-transform: uppercase;
+				}
+
+				.counter {
+					width: 15px;
+					height: 15px;
+					background-color: red;
+					border-radius: 50%;
+					color: white;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 10px;
+					font-weight: bold;
+					position: absolute;
+					top: -5px;
+					right: -5px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px)  {
+		z-index: 9999;
+		box-shadow: 0 1px 4px #92a1b0;
+	}
+}
+
+.header-pencil{
+	width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+	cursor: pointer;
+	
+	&:hover {
+		background-color: #ade3bf;
+	}
+}
